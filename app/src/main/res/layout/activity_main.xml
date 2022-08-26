@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/small_moan"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:onClick="playSmallMoan"
+        android:text="Small Moan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/long_moan"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:onClick="playLongMoan"
+        android:text="Long Moan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/small_moan" />
+
+    <Button
+        android:id="@+id/fart_1"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:onClick="playFart1"
+        android:text="Fart 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/long_moan" />
+
+    <Button
+        android:id="@+id/what_the_fuck"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="playWhatTheFuck"
+        android:text="What The Fuck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chala_ja_bhosdike" />
+
+    <Button
+        android:id="@+id/fart_2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:onClick="playFart2"
+        android:text="Fart 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fart_1" />
+
+    <Button
+        android:id="@+id/kya_ladka_hai"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:onClick="playKyaLadhaHai"
+        android:text="Kya Ladka Hai"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fart_2" />
+
+    <Button
+        android:id="@+id/robert_b_weide"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="playRobertBWeide"
+        android:text="Robert B Weide Meme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuck_you" />
+
+    <Button
+        android:id="@+id/fuck_you"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="playFuckYou"
+        android:text="Fuck You"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/what_the_fuck" />
+
+    <Button
+        android:id="@+id/chala_ja_bhosdike"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="playChalaJaBhosdike"
+        android:text="Chala Ja Bhosdike"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anime_moan" />
+
+    <Button
+        android:id="@+id/anime_moan"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="playAnimeMoan"
+        android:text="Anime Moan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stop"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="stop"
+        android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kya_ladka_hai" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
